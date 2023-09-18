@@ -17,6 +17,22 @@ function bgMenu(){
 
 }
 
+function headerFixed(){
+    const $header = d.querySelector("header");
+
+    d.addEventListener("scroll", e=>{
+        if(window.scrollY > 90){
+            $header.classList.add("is-active");
+        }else{
+            $header.classList.remove("is-active");
+        }
+    });
+}
 
 
-d.addEventListener("DOMContentLoaded",bgMenu);
+d.addEventListener("DOMContentLoaded", e =>{
+    bgMenu();
+    headerFixed();
+});
+
+
