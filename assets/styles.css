@@ -287,3 +287,70 @@ nav ul li:hover:not(#title){
     padding: 20px;
     text-align: justify;
 }
+
+/*Footer*/
+
+footer{
+    background-color: #000;
+}
+
+.redes{
+    
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.redes::before{
+content: "";
+position: absolute;
+left: 0%;
+top: 50%;
+border-bottom: 2px solid white;
+width: 40%;
+}
+
+.redes::after{
+    content: "";
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    border-bottom: 2px solid white;
+    width: 40%;
+    }
+
+.redes i{
+    font-size: 2em;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+}
+
+.contacto p{
+    margin: 0 15px;
+}
+
+.contacto p:last-child{
+    text-decoration: underline;
+}
+
+.right{
+    color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right span{
+    margin-top: 20px;
+    text-decoration: underline;
+}
