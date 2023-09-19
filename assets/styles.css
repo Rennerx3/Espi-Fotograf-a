@@ -13,7 +13,6 @@ html{
 body{
     margin: 0;
     padding: 0;
-    
     overflow-x: hidden;
 }
 
@@ -44,6 +43,8 @@ header li:hover:not(#title-scroll){
     font-size: 1.5em;
     border: none;
 }
+
+
 
 @media screen and (max-width:800px){
     header{
@@ -608,4 +609,65 @@ width: 40%;
         border-bottom: 2px solid white;
         width: 20%;
         }    
+}
+
+/*Contacto*/
+
+form{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.504);
+    backdrop-filter: blur(10px);
+    width: 50%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+form *:not(.btn-E){
+    width: 50%;
+    height: auto;
+    margin: 30px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+.btn-E{
+    margin: 10px 0 30px 0;
+    cursor: pointer;
+    padding: 10px 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.btn-E:hover{
+    background-color: rgba(255, 255, 255, 0.578);
+}
+
+form *::placeholder{
+    color: white;
+}
+
+textarea{
+    resize: none;
+}
+
+#inicio-C{
+    width: 100%;
+    height: 120vh;
+    
+}
+
+#inicio-C img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover; 
 }
