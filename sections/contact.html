@@ -48,10 +48,10 @@
     </div>
     <!--Contact-->
     <form>
-        <input name="nombre" type="text" placeholder="NOMBRE" required>
-        <input name="email" type="email" placeholder="EMAIL" required>
+        <input title="Sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜüs]+$" name="nombre" type="text" placeholder="NOMBRE" required>
+        <input title="Email incorrecto" pattern="^[a-z0-9]+(.[_a-z0-9]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,15})$"  name="email" type="email" placeholder="EMAIL" required>
         <input name="telefono" type="tel" placeholder="TELÉFONO" required>
-        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <textarea name="mensaje" id="" cols="50" rows="10" placeholder="Escribe tu mensaje aquí..." required></textarea>
         <input type="submit" value="ENVÍAR" class="btn-E">
     </form>
     <!--Footer-->
