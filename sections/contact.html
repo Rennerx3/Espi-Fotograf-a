@@ -14,22 +14,24 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="">TRABAJOS</a></li>
-                    <li id="title-scroll"><a href="index.html">ESPI FOTOGRAFIA</a></li>
-                    <li><a href="">ACERCA DE MI</a></li>
-                    <li><a href="contact.html">CONTACTO</a></li>
+                    <h3 id="title-scroll">ESPI FOTOGRAFIA</h3>
+                    <div>
+                        <li><a href="../index.html">INICIO</a></li>
+                        <li><a href="">TRABAJOS</a></li>
+                        <li><a href="../sections/contact.html">CONTACTO</a></li>
+                    </div>
                 </ul>
             </nav>
         </header>
         <img src="../img/contact.jpg" alt="">
         <nav class="menu-d">
             <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="">TRABAJOS</a></li>
-                <li id="title">CONTACTA CONMIGO</li>
-                <li><a href="">ACERCA DE MI</a></li>
-                <li><a href="contact.html">CONTACTO</a></li>
+                <h2 id="title">ESPI FOTOGRAFIA</h2>
+                <div>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="">TRABAJOS</a></li>
+                    <li><a href="../sections/contact.html">CONTACTO</a></li>
+                </div>
             </ul>
         </nav>
         <button id="btn" class="hamburger--collapse hamburger" type="button">
@@ -39,15 +41,14 @@
         </button>
         <aside class="panel">
             <nav class="menu">
-                <a href="index.html">INICIO</a>
+                <a href="../index.html">INICIO</a>
                 <a href="">TRABAJOS</a>
-                <a href="">ACERCA DE MI</a>
-                <a href="sections/contact.html">CONTACTO</a>
+                <a href="../sections/contact.html">CONTACTO</a>
             </nav>
-        </aside>    
+        </aside>       
     </div>
     <!--Contact-->
-    <form>
+    <form class="contact-form" action="https://formsubmit.co/rmokosce21@hotmail.com" method="POST">
         <input title="Sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜüs]+$" name="nombre" type="text" placeholder="NOMBRE" required>
         <input title="Email incorrecto" pattern="^[a-z0-9]+(.[_a-z0-9]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,15})$"  name="email" type="email" placeholder="EMAIL" required>
         <input name="telefono" type="tel" placeholder="TELÉFONO" required>
