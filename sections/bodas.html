@@ -12,34 +12,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display&family=Irish+Grover&family=Roboto+Condensed:wght@300&family=Tinos&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Contacto</title>
+    <title>Trabajos</title>
 </head>
 <body>
-    <!--Header-->
-    <div id="inicio-C">
-        <header>
-            <nav>
+    <!--1er sección-->
+    <div id="inicio-T">
+        <header class="header-T">
+            <nav class="menu-T">
                 <ul>
                     <h3 id="title-scroll">ESPI FOTOGRAFIA</h3>
                     <div>
                         <li><a href="../index.html">INICIO</a></li>
                         <li><a href="">TRABAJOS</a></li>
-                        <li><a href="../sections/contact.html">CONTACTO</a></li>
+                        <li><a href="sections/contact.html">CONTACTO</a></li>
                     </div>
                 </ul>
             </nav>
         </header>
-        <img src="../img/contact.jpg" alt="">
-        <nav class="menu-d">
-            <ul>
-                <h2 id="title">ESPI FOTOGRAFIA</h2>
-                <div>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="">TRABAJOS</a></li>
-                    <li><a href="../sections/contact.html">CONTACTO</a></li>
-                </div>
-            </ul>
-        </nav>
         <button id="btn" class="hamburger--collapse hamburger" type="button">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
@@ -47,20 +36,30 @@
         </button>
         <aside class="panel">
             <nav class="menu">
-                <a href="../index.html">INICIO</a>
+                <a href="index.html">INICIO</a>
                 <a href="">TRABAJOS</a>
-                <a href="../sections/contact.html">CONTACTO</a>
+                <a href="sections/contact.html">CONTACTO</a>
             </nav>
-        </aside>       
+        </aside>    
     </div>
-    <!--Contact-->
-    <form class="contact-form" action="https://formsubmit.co/rmokosce21@hotmail.com" method="POST">
-        <input title="Sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÁáÉéÍíÓóÚúÜüñÑ ]+$" name="nombre" type="text" placeholder="NOMBRE Y APELLIDO" required>
-        <input title="Email incorrecto" pattern="^[a-z0-9]+(.[_a-z0-9]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,15})$"  name="email" type="email" placeholder="EMAIL" required>
-        <input name="telefono" pattern="^[0-9]{0,10}$" title="El número ingresado no es correcto" type="tel" placeholder="TELÉFONO. Ej: 094321254" required>
-        <textarea name="mensaje" id="" cols="50" rows="10" placeholder="Escribe tu mensaje aquí..." title="Debe de ingresar su mensaje" required></textarea>
-        <input type="submit" value="ENVÍAR" class="btn-E">
-    </form>
+    <!--Main-->
+    <main class="main-bodas">
+        <h1>BODAS <br><span>ÁLBUMES</span></h1>
+        <section class="section-bodas">
+            <article class="art-1">
+                <img src="../img/hor.jpg" alt="">
+            </article>
+            <article class="art-2">
+                <img src="../img/hor2.jpg" alt="">
+            </article>
+            <article class="art-3">
+                <img src="../img/cuad.jpg" alt="">
+            </article>
+            <article class="art-4">
+                <img src="../img/sm.jpg" alt="">
+            </article>
+        </section>
+    </main>
     <!--Footer-->
     <footer>
         <div class="redes">

@@ -732,7 +732,7 @@ textarea{
 
 /*Formulario validaciones*/
 
-/*.contact-form{
+.contact-form{
     --form-ok-color: #4caf50;
     --form-error-color: #f44336;
 }
@@ -741,9 +741,27 @@ textarea{
     border: thin solid var(--form-ok-color);
 }
 
-.contact-form [required]:invalid{
-    border: thin solid var(--form-error-color);
-}*/
+.contact-form-error{
+    font-size: 80%;
+    color: #fff;
+    transition: all 800ms ease;
+    padding: 0;
+    position: relative;
+    top: 30px;
+}
+
+.contact-form-error.is-active{
+    display: block;
+    animation: show-message 1s 1 normal 0s ease-out both;
+    background-color: var(--form-error-color);
+    margin: 0;
+}
+
+
+
+.none{
+    display: none;
+}
 
 
 /*Trabajos*/
@@ -786,4 +804,288 @@ textarea{
     filter: contrast(120%);
 }
 
+/*Bodas*/
 
+.main-bodas{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'DM Serif Display', serif;
+
+}
+
+.main-bodas h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+.main-bodas h1 span{
+    font-size: 0.5em;
+    display: block;
+    position: relative;
+    bottom: 20px;
+    color: #8C8C8C;
+    
+}
+
+.section-bodas{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.section-bodas article{
+    width: 100%;
+    margin: 0;
+}
+
+.section-bodas img{ 
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.art-1::after{
+    content: "BODA DE VALENTINA";
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    top: 55%;
+    left: 25%;
+    color: white;
+    transform: translate(-50%,-50%);
+    font-family: 'DM Serif Display', serif;
+}
+
+.art-1 img{
+    opacity: 0.75;
+    transition: opacity 0.5s ease;
+}
+
+.art-1 img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.art-1:hover::after{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.art-2::after{
+    content: "BODA DE VALENTINA";
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    top: 55%;
+    right: 15%;
+    color: white;
+    transform: translate(-50%,-50%);
+    font-family: 'DM Serif Display', serif;
+}
+
+.art-2 img{
+    opacity: 0.75;
+    transition: opacity 0.5s ease;
+}
+
+.art-2 img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.art-2:hover::after{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.art-3::after{
+    content: "BODA DE VALENTINA";
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    bottom: -15%;
+    left: 25%;
+    color: white;
+    transform: translate(-50%,-50%);
+    font-family: 'DM Serif Display', serif;
+}
+
+.art-3 img{
+    opacity: 0.75;
+    transition: opacity 0.5s ease;
+}
+
+.art-3 img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.art-3:hover::after{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.art-4::after{
+    content: "BODA DE VALENTINA";
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    bottom: -15%;
+    right: 15%;
+    color: white;
+    transform: translate(-50%,-50%);
+    font-family: 'DM Serif Display', serif;
+}
+
+.art-4 img{
+    opacity: 0.75;
+    transition: opacity 0.5s ease;
+}
+
+.art-4 img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.art-4:hover::after{
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1250px){
+    .art-2::after{
+        right: 13%;
+    }
+
+    .art-4::after{
+        right: 13%;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .art-2::after{
+        right: 12%;
+    }
+
+    .art-4::after{
+        right: 12%;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .art-2::after{
+        right: 11%;
+    }
+
+    .art-4::after{
+        right: 11%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .art-2::after{
+        right: 8%;
+    }
+
+    .art-4::after{
+        right: 8%;
+    }
+}
+
+@media screen and (max-width: 999px){
+    .section-bodas{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        place-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .art-1 img{
+        opacity: 1;
+    }
+
+    .art-1::after{
+    content: "BODA DE VALENTINA";
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    bottom: 40%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    font-family: 'DM Serif Display', serif;
+    }
+
+    .art-2 img{
+        opacity: 1;
+    }
+
+    .art-2::after{
+    content: "BODA DE VALENTINA";
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    top: 112%;
+    left: 58%;
+    color: white;
+    transform: translate(-50%,-50%);
+    font-family: 'DM Serif Display', serif;
+    }
+
+    .art-3 img{
+        opacity: 1;
+    }
+
+    .art-3::after{
+    content: "BODA DE VALENTINA";
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    top: 170%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    font-family: 'DM Serif Display', serif;
+    }
+
+    .art-4 img{
+        opacity: 1;
+    }
+
+    .art-4::after{
+    content: "BODA DE VALENTINA";
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    top: 227%;
+    left: 57%;
+    color: white;
+    transform: translate(-50%,-50%);
+    font-family: 'DM Serif Display', serif;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .art-1::after{
+        top: 53%;
+    }
+    .art-2::after{
+        top: 107%;
+    }
+    .art-3::after{
+        top: 166%;
+    }
+    .art-4::after{
+        top: 223%;
+        right: -2%;
+    }
+}
