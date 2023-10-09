@@ -304,7 +304,6 @@ nav ul li:hover:not(#title,#title-scroll){
     padding: 13px;
     border-radius: 5px;
     background-color: black;
-    color: white;
     cursor: pointer;
     width: 10%;
     font-family: 'DM Serif Display', serif;
@@ -313,6 +312,11 @@ nav ul li:hover:not(#title,#title-scroll){
 #btnV:hover{
     background-color: rgba(0, 0, 0, 0.833);
     font-weight: 800;
+}
+
+#btnV a{
+    text-decoration: none;
+    color: white;
 }
 
 @media screen and (max-width: 950px){
@@ -493,6 +497,7 @@ nav ul li:hover:not(#title,#title-scroll){
 
     .sobre-mi p{
         width: 80%;
+        text-align: left;
     }
 
     .title-sobre{
@@ -879,16 +884,25 @@ a:hover img{
     object-fit: cover;
 }
 
-.art-1::after{
-    content: "BODA DE VALENTINA";
+.art-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.art-1::after {
+    content: "BODA DE MARCELA";
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s ease;
-    top: 55%;
-    left: 25%;
     color: white;
-    transform: translate(-50%,-50%);
     font-family: 'DM Serif Display', serif;
+}
+
+.art-1 a{
+    width: 100%;
 }
 
 .art-1 img{
@@ -906,16 +920,25 @@ a:hover img{
     cursor: pointer;
 }
 
-.art-2::after{
+.art-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.art-2::after {
     content: "BODA DE VALENTINA";
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s ease;
-    top: 55%;
-    right: 15%;
     color: white;
-    transform: translate(-50%,-50%);
     font-family: 'DM Serif Display', serif;
+}
+
+.art-2 a{
+    width: 100%;
 }
 
 .art-2 img{
@@ -933,16 +956,25 @@ a:hover img{
     cursor: pointer;
 }
 
-.art-3::after{
-    content: "BODA DE VALENTINA";
+.art-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.art-3::after {
+    content: "BODA DE AGUSTINA";
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s ease;
-    bottom: -15%;
-    left: 25%;
     color: white;
-    transform: translate(-50%,-50%);
     font-family: 'DM Serif Display', serif;
+}
+
+.art-3 a{
+    width: 100%;
 }
 
 .art-3 img{
@@ -960,16 +992,25 @@ a:hover img{
     cursor: pointer;
 }
 
-.art-4::after{
-    content: "BODA DE VALENTINA";
+.art-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.art-4::after {
+    content: "BODA DE MARCELINE";
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s ease;
-    bottom: -15%;
-    right: 15%;
     color: white;
-    transform: translate(-50%,-50%);
     font-family: 'DM Serif Display', serif;
+}
+
+.art-4 a{
+    width: 100%;
 }
 
 .art-4 img{
@@ -987,27 +1028,293 @@ a:hover img{
     cursor: pointer;
 }
 
-@media screen and (max-width: 1250px){
-    .art-1::after{
-        top:59%;
-    }
-
-    .art-2::after{
-        top:59%;
-        right: 13%;
-    }
-
-    .art-3::after{
-        top: 122%;
-    }
-
-    .art-4::after{
-        top: 122%;
-        right: 13%;
-    }
+.artb-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
+.artb-1::after {
+    content: "BOOK DE FABIANA";
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+}
 
+.artb-1 a{
+    width: 100%;
+}
+
+.artb-1 img{
+    opacity: 0.75;
+    transition: opacity 0.5s ease;
+}
+
+.artb-1 img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.artb-1:hover::after{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.artb-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.artb-2::after {
+    content: "BOOK DE JOAQUIN";
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+}
+
+.artb-2 a{
+    width: 100%;
+}
+
+.artb-2 img{
+    opacity: 0.75;
+    transition: opacity 0.5s ease;
+}
+
+.artb-2 img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.artb-2:hover::after{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.artb-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.artb-3::after {
+    content: "BOOK DE ROSELINE";
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+}
+
+.artb-3 a{
+    width: 100%;
+}
+
+.artb-3 img{
+    opacity: 0.75;
+    transition: opacity 0.5s ease;
+}
+
+.artb-3 img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.artb-3:hover::after{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.artb-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.artb-4::after {
+    content: "BOOK DE APARICIO";
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+}
+
+.artb-4 a{
+    width: 100%;
+}
+
+.artb-4 img{
+    opacity: 0.75;
+    transition: opacity 0.5s ease;
+}
+
+.artb-4 img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.artb-4:hover::after{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.artu-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.artu-1::after {
+    content: "NATURALEZA";
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+}
+
+.artu-1 a{
+    width: 100%;
+}
+
+.artu-1 img{
+    opacity: 0.75;
+    transition: opacity 0.5s ease;
+}
+
+.artu-1 img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.artu-1:hover::after{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.artu-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.artu-2::after {
+    content: "STREET";
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+}
+
+.artu-2 a{
+    width: 100%;
+}
+
+.artu-2 img{
+    opacity: 0.75;
+    transition: opacity 0.5s ease;
+}
+
+.artu-2 img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.artu-2:hover::after{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.artu-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.artu-3::after {
+    content: "TETRIC";
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+}
+
+.artu-3 a{
+    width: 100%;
+}
+
+.artu-3 img{
+    opacity: 0.75;
+    transition: opacity 0.5s ease;
+}
+
+.artu-3 img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.artu-3:hover::after{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.artu-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.artu-4::after {
+    content: "IRONIC";
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+}
+
+.artu-4 a{
+    width: 100%;
+}
+
+.artu-4 img{
+    opacity: 0.75;
+    transition: opacity 0.5s ease;
+}
+
+.artu-4 img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.artu-4:hover::after{
+    opacity: 1;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 999px){
     .section-bodas{
@@ -1026,14 +1333,10 @@ a:hover img{
     }
 
     .art-1::after{
-    content: "BODA DE VALENTINA";
-    position: absolute;
+    content: "BODA DE MARCELA";
     opacity: 1;
     transition: opacity 0.5s ease;
-    bottom: 40%;
-    left: 50%;
     color: white;
-    transform: translate(-50%,-50%);
     font-family: 'DM Serif Display', serif;
     }
 
@@ -1043,13 +1346,9 @@ a:hover img{
 
     .art-2::after{
     content: "BODA DE VALENTINA";
-    position: absolute;
     opacity: 1;
     transition: opacity 0.5s ease;
-    top: 123%;
-    left: 58%;
     color: white;
-    transform: translate(-50%,-50%);
     font-family: 'DM Serif Display', serif;
     }
 
@@ -1058,14 +1357,10 @@ a:hover img{
     }
 
     .art-3::after{
-    content: "BODA DE VALENTINA";
-    position: absolute;
+    content: "BODA DE AGUSTINA";
     opacity: 1;
     transition: opacity 0.5s ease;
-    top: 187%;
-    left: 50%;
     color: white;
-    transform: translate(-50%,-50%);
     font-family: 'DM Serif Display', serif;
     }
 
@@ -1074,36 +1369,245 @@ a:hover img{
     }
 
     .art-4::after{
-    content: "BODA DE VALENTINA";
-    position: absolute;
+    content: "BODA DE MARCELINE";
     opacity: 1;
     transition: opacity 0.5s ease;
-    top: 248%;
-    left: 57%;
     color: white;
-    transform: translate(-50%,-50%);
+    font-family: 'DM Serif Display', serif;
+    }
+
+    .artb-1 img{
+        opacity: 1;
+    }
+
+    .artb-1::after{
+    content: "BOOK DE FABIANA";
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    }
+
+    .artb-2 img{
+        opacity: 1;
+    }
+
+    .artb-2::after{
+    content: "BOOK DE JOAQUIN";
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    }
+
+    .artb-3 img{
+        opacity: 1;
+    }
+
+    .artb-3::after{
+    content: "BOOK DE ROSELINE";
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    }
+
+    .artb-4 img{
+        opacity: 1;
+    }
+
+    .artb-4::after{
+    content: "BOOK DE APARICIO";
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    }
+
+    .artu-1 img{
+        opacity: 1;
+    }
+
+    .artu-1::after{
+    content: "NATURALEZA";
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    }
+
+    .artu-2 img{
+        opacity: 1;
+    }
+
+    .artu-2::after{
+    content: "STREET";
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    }
+
+    .artu-3 img{
+        opacity: 1;
+    }
+
+    .artu-3::after{
+    content: "TETRIC";
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    }
+
+    .artu-4 img{
+        opacity: 1;
+    }
+
+    .artu-4::after{
+    content: "IRONIC";
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    color: white;
     font-family: 'DM Serif Display', serif;
     }
 }
 
-@media screen and (max-width: 800px){
-    .art-1::after{
-        top: 56%;
-    }
-    .art-2::after{
-        top: 119%;
-        left: 56%;    
-    }
-    .art-3::after{
-        top: 182%;
-    }
-    .art-4::after{
-        top: 245%;
+
+/*Bodas-uno*/
+
+.conteiner-D{
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    min-height: 100vh;
+    gap: 6px;
+    padding: 6px;
+    margin: 0;
+}
+
+.conteiner-D img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.conteiner-D img:hover{
+    filter:opacity(0.90);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+    .conteiner-D{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     }
 }
 
-@media screen and (max-width: 490px){
-    .art-2::after, .art-4::after{
-        width: 50%;
+/*Carousel*/
+
+.slider{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 11;
+    display: none;
+    padding: 20px 20px;
+    height: 100vh;
+    backdrop-filter: blur(30px);
+}
+
+.slider.is-active{
+    display: block;
+}
+
+.slider-slides{
+    position: relative;
+    height: 700px;
+}
+
+.slider-slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.slider-slide.is-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.slider-slide img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.slider-btns{
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 6rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.slider-btns a{
+    display: block;
+    margin: 0 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.775);
+    
+}
+
+.slider-btns a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.div-exit{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boton-cierre{
+    position: relative;
+    z-index: 10;
+    color: black;
+    font-size: 50px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    backdrop-filter: blur(15px);
+    opacity: .20;
+    cursor: pointer;
+}
+
+.boton-cierre:hover{
+    opacity: .50;
+    backdrop-filter: blur(30px);
+}
+
+@media screen and (max-width: 700px){
+    .slider-slide img{
+        width: inherit;
+        height: inherit;
+        object-fit: contain;
+    }
+
+    .slider-slides{
+        position: relative;
+        height: 630px;
+        background-color: black;
     }
 }
+
