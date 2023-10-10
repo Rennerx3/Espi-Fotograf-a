@@ -81,10 +81,6 @@ fs.readdir(directoryPath, (err, files) => {
 
 
 
-
-
-
-
 app.listen(3000, () => {
     console.log(`El servidor está funcionando`)
 });
