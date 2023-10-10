@@ -1526,7 +1526,7 @@ a:hover img{
 
 .slider-slides{
     position: relative;
-    height: 700px;
+    height: 95vh;
 }
 
 .slider-slide{
@@ -1606,7 +1606,7 @@ a:hover img{
 
     .slider-slides{
         position: relative;
-        height: 630px;
+        height: 95vh;
         background-color: black;
     }
 }
